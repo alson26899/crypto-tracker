@@ -1,0 +1,102 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure modal is above other content */
+}
+
+/* Modal Content */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+/* Modal Header */
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: right; /* Align header text to the right */
+}
+
+/* Modal Body */
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.modal-content li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.modal-content label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.modal-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Modal Buttons Container */
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Common Button Styles */
+.modal-buttons button {
+    background-color: #007bff; /* Primary color */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Primary Button Hover Effect */
+.modal-buttons button:hover {
+    background-color: #0056b3; /* Darker shade */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Primary Button Active Effect */
+.modal-buttons button:active {
+    background-color: #004494; /* Even darker shade */
+    transform: translateY(0); /* Remove lift effect */
+}
+
+/* Cancel Button */
+.modal-buttons .cancel-btn {
+    background-color: #6c757d; /* Secondary color */
+}
+
+/* Cancel Button Hover Effect */
+.modal-buttons .cancel-btn:hover {
+    background-color: #5a6268; /* Darker shade */
+}
+
+/* Cancel Button Active Effect */
+.modal-buttons .cancel-btn:active {
+    background-color: #4e555b; /* Even darker shade */
+}

@@ -1,0 +1,67 @@
+/* App Container */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* App Header */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* App Header Title */
+.App-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Main Content Area */
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer (Optional) */
+.App-footer {
+  padding: 10px;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Gray color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for a smooth look */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker gray when hovering over the scrollbar thumb */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1; /* Gray thumb and light gray track */
+}
+
